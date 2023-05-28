@@ -1,0 +1,75 @@
+Busca Aleatória:
+
+5 5 1
+0 0 0 0 0 
+# # # 0 0 
+? 0 0 0 0 
+# # # 0 0 
+# # # 0 # 
+
+
+
+MATRIZ VERDADE(1 = casa foi acessada pelo personagem, 0 = não foi):
+
+MATRIZ VERDADE 1:
+
+1 1 1 1 1 
+0 0 0 1 1 
+1 1 1 1 1 
+0 0 0 1 1 
+0 0 0 1 0 
+
+
+
+
+
+Busca em Profundidade:
+
+5 5 1
+x x x x x 
+# # # x * 
+? x x 1 1 
+# # # * 1 
+# # # 1 # 
+
+
+
+MATRIZ VERDADE(1 = casa foi acessada pelo personagem, 0 = não foi):
+
+MATRIZ VERDADE 1:
+
+1 1 1 1 1 
+0 0 0 1 0 
+1 1 1 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+
+
+
+
+
+Busca em Largura:
+
+5 5 1
+x x x x x 
+# # # x x 
+? x x x x 
+# # # x x 
+# # # x # 
+
+
+
+MATRIZ VERDADE(1 = casa foi acessada pelo personagem, 0 = não foi):
+
+MATRIZ VERDADE 1:
+
+1 1 1 1 1 
+0 0 0 1 1 
+1 1 1 1 1 
+0 0 0 1 1 
+0 0 0 1 0 
+
+
+
+
+
