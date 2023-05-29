@@ -55,13 +55,13 @@
 
 # Output
 <p align="justify">
-O output do programa,além do arquivo "output.data", o qual será explanado adiante, consiste em prints na tela de todas as matrizes do seguinte modo: primeiro, é printada a matriz antes de ser percorrida, depois a posição inicial para o percorrimento, depois o caminho percorrido, incluindo a indicação de por onde o personagem saiu da matriz, porém em caixa alta, a matriz após ser percorrida e, por fim, estatos importantes como pontos ganhos ao percorrer a fase, perigos enfrentados na fase naquela iteraçao,	casas percorridas ao menos uma vez na fase com o decorrer do jogo, pontos totais acumulados, vidas e itens do personagem.
+No arquivo "output.data",  são mostradas a matriz percorrida e a matriz verdade de cada um dos três métodos, aleatório, DFS e BFS respectivamente. Na figura a seguir, é mostrado o output do DFS.
 </p>	
 
 ![telaOutput](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/telaOutput.png)
 
 <p align="justify">
-Todas as matrizes são printadas dessa forma cada vez que são percorridas e, sempre que a primeira matriz é percorrida, printa-se também o número de vezes que ela já foi percorrida. Se for a primeira vez que ela estiver sendo percorrida, o número printado será 1. Na imagem a seguir, por exemplo, é a quinta vez que o personagem alcança a fase 1.
+Já na própria tela, são printadas a matriz a ser percorrida, a matriz percorrida, o número de casas percorridas ao menos uma vez na matriz,
 </p>
 
 ![telaOutputPrimeiraFase](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/telaOutputPrimeiraFase.png)
