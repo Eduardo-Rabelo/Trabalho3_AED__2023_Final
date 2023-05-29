@@ -20,8 +20,7 @@
 	Na imagem acima, é mostrado como a busca em profundidade ocorre, primeiro, o personagem tenta as duas primeiras direções na ordem de prioridade, porém há paredes bloqueando seu caminho, de modo que ele vai para a direita. Ao parar na borda da matriz, ele vai direto para a quarta direção prioritária. Caso as demais direções além das três de maior prioridade estivessem bloqueadas, ele voltaria na mais prioritaria, depois na segunda e na terceira até uma ser possível. E, caso não seja, a posição é desempilhada e o personagem volta para a casa que estava anteriormente, mesmo ela sendo já marcada.
 </p>
 
-![LarguraPe](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/Diagonal.png)
-	COLOCAR IMAGEM AQUI
+![LarguraPe](https://github.com/Eduardo-Rabelo/Trabalho3_AED__2023_Final/blob/main/ImagensTrabalho3_AED/LargoPe.png)
 
 <p align="justify">
 	A última imagem, por sua vez, mostra como a busca em largura funciona. Como o personagem toma todas as direções possíveia a partir de onde ele está, ele tende a encontrar muito mais perigos e percorrer mais casas, sobretudo quando a condição de fim se encontra próxima ao final da matriz, como é demonstrado na imagem a seguir. 
