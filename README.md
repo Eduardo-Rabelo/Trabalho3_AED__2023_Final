@@ -26,8 +26,8 @@
 	A última imagem, por sua vez, mostra como a busca em largura funciona. Como o personagem toma todas as direções possíveia a partir de onde ele está, ele tende a encontrar muito mais perigos e percorrer mais casas, sobretudo quando a condição de fim se encontra próxima ao final da matriz, como é demonstrado na imagem a seguir. 
 </p>
 
-![LarguraG](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/Diagonal.png)
-	COLOCAR IMAGEM AQUI
+![LarguraG](https://github.com/Eduardo-Rabelo/Trabalho3_AED__2023_Final/blob/main/ImagensTrabalho3_AED/LarguraG.png)
+
 <p align="justify">
 	Para a mesma matriz, o DFS segue somente uma direção, ou seja, o personagem anda muito menos casas que no método BFS. Porém, caso a interrogação estivesse logo abaixo da casa inicial,o custo de percorrer a matriz seria teta de 1. 
 </p>
