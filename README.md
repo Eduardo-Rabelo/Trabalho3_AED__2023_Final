@@ -38,7 +38,8 @@
 	
 # Custo
 <p align="justify">
-	O custo do algoritmo, em questão de memória alocada, depende da ordem das matrizes. Para percorrer a matriz, o custo pertence à classe Teta de n, sendo n o numero de elementos da matriz. No mínimo o custo seria 2n para criar os vectors que representa a matriz e a matriz verdade,,porém,dependendo do número de perigos e do método usado, o custo aumenta, podendo chegar no pior caso, que seria uma matriz composta somente por perigos, a Teta de n! .
+	O custo do algoritmo, em questão de memória alocada, depende da ordem das matrizes. Para percorrer a matriz, o custo pertence à classe Teta de n, sendo n o numero de elementos da matriz. No mínimo o custo seria 2n para criar os vectors que representa a matriz e a matriz verdade,porém,dependendo do número de perigos e do método usado, o custo aumenta, podendo chegar no pior caso, que seria uma matriz composta somente por perigos, a Teta de n!.
+	O custo de cada método depende mais de onde os perigos estão posicionados do que de quantas casas são percorridas. Porém, quanto mais casas são percorridas, maior é a chance de se encontrar prigos e, por essa razão, no geral, caso o símbolo de parada esteja próximo ao fim da matriz,o BFS tende a ser pior que o DFS, pois , no BFS, são percorridas muito mais casas e há grandes chances de se encontrar mais perigos.
 </p>
 
 
