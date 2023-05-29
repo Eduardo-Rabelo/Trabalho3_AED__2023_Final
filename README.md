@@ -1,19 +1,32 @@
 # Labirinto por Profundidade (DFS) e Largura (BFS)
 <p align="justify">
-	O algoritmo aqui apresentado,assim como no trabalho anterior, tem como objetivo extrair matrizes de um arquivo "input.data", percorrê-las de seuindo regras pré determinadas e salva-las em um arquivo "output.data" sem alterar as informações de "input.data". Porém, além do metodo aleatório para percorrer a matriz, dois novos métodos muito mais previsíveis foram implementados, sendo eles a busca em profundidade (DFS) e a busca em largura (BFS). Na busca em profundidade, o personagem anda pelo labirinto seguindo sempre a mesma direção até chegar a uma extremidade, ou borda da matriz, ou a um caractere especial, que pode ser uma parede (#), um marcador de caminho já percorrido (x) ou o indicador de fim de jogo (?). Caso alguma condição de parada seja satisfeita, o personagem toma outro caminho baseado em uma ordem pré definida de prioridades. Ele primei
+	O algoritmo aqui apresentado,assim como no trabalho anterior, tem como objetivo extrair matrizes de um arquivo "input.data", percorrê-las de seuindo regras pré determinadas e salva-las em um arquivo "output.data" sem alterar as informações de "input.data". Porém, além do metodo aleatório para percorrer a matriz, dois novos métodos muito mais previsíveis foram implementados, sendo eles a busca em profundidade (DFS) e a busca em largura (BFS). 
 </p>
-	
-	
-![Direita](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/direita.png)
+<p align="justify">
+	Na busca em profundidade, o personagem anda pelo labirinto seguindo sempre a mesma direção até chegar a uma extremidade, ou borda da matriz, ou a um caractere especial, que pode ser uma parede (#), um marcador de caminho já percorrido (x) ou o indicador de fim de jogo (?). Caso alguma condição de parada seja satisfeita, o personagem toma outro caminho baseado em uma ordem pré definida de prioridades. Ele primeiro escolhe o caminho da diagonal direita pra baixo, depois baixo, direita, diagonal esquerda pra baixo, diagonal direta pra cima, cima, diagonal esquerda pra cima e, por fim, esquerda.
+</p>
+<p align="justify">
+	Já na busca em largura, a matriz é percorrida de modo que todas as possibilidades válidas de caminho são tomadas ao mesmo tempo. De modo que a partir da posição em que o personagem está, ele acessa todas as casas ao redor. Da posição (0,0) da matriz, por exemplo, as posições (1,0), (0,1) e (1,1) são acessadas, caso não haja uma parede impedindo a passagem do personagem. Para se implementar esse método foi utilizada uma fila, estrutura de dados do tipo "First in, First out", o que faz com que após prcorrer todas as posições possíveis da casa inicial, por exemplo, o personagem volte para a posição (1,1), que é a primeira casa acessada após a inicial. A ordem de prioridade deste método é a mesma do DFS.
+</p>
+
+<p align="justify">
+	Assim como no trabalho anterior, há perigos (*) pelo caminho, agora porém, esses parigos fazem o personagem voltar para o início da matriz, sendo que a única mudança, na própria matriz, é a troca do perigo por um item (1),para evitar que a matriz seja reiniciada infinitas vezes. Todo o caminho percorrido pelo personagem antes de chegar no perigo é apagado e o percorrimento recomeça. Isso torna o processo muito mais custoso, em termos de tempo de execução e a diferença de tempo entre os métodos de busca se torna evidente. No geral, o BFS é bom para encontrar a condição de finalização (?) caso ela esteja próxima ao início da matriz, e o DFS é melhor quando ela fica mais próxima ao final.
+</p>
+
+![ProfundoPe](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/direita.png)
 
 		
 <p align="justify">	
-	Há ainda, casos especiais. Quando o persongem está na última coluna, ele pode se mover,caso seja possível,  tanto para a linha superior, ou inferior a que ele se encontra, porém na próxima matriz, se ele tiver se movido para a diagonal direita superior, ou  inferior, respectivamente. Se o personagem estiver no canto inferior direito da matriz e se mover para a diagonal direita inferior, ele se moverá para a última linha da primeira coluna da próxima fase. Da mesma forma, caso se mova para diagonal direita superior, estando no canto superior direito, o transporde ocorrerá como se ele tivesse se movido para a direita. Por fim,caso ele esteja no canto inferior esquerdo, mover para diagonal esquerda inferior é equivalente a mover para baixo. Não é possível se transportar para outra fase por cima, ou pela esquerda.
+	Na imagem acima, é mostrado como a busca em profundidade ocorre, primeiro, o personagem tenta as duas primeiras direções na ordem de prioridade, porém há paredes bloqueando seu caminho, de modo que ele vai para a direita. Ao parar na borda da matriz, ele vai direto para a quarta direção prioritária. Caso as demais direções além das três de maior prioridade estivessem bloqueadas, ele voltaria na mais prioritaria, depois na segunda e na terceira até uma ser possível. E, caso não seja, a posição é desempilhada e o personagem volta para a casa que estava anteriormente, mesmo ela sendo já marcada.
 </p>
 
-![Diagonal](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/Diagonal.png)
+![LarguraPe](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/Diagonal.png)
 	COLOCAR IMAGEM AQUI
 
+<p align="justify">
+
+</p>
+	
 <p align="justify">
 	Todo o processo para percorrer matriz está implementado no método "void percorreMatriz()" da classe Matriz. Além das regras de transporte já citadas, dentro da mesma matriz, ou fase, o transporte ocorre de modo aleatório sendo que cada elemento da matriz gera efeitos no personagem, ou impede o movimento pela fase. O símbolo "#" simboliza uma parede intransponível, de modo que, se o movimento sorteado levar o personagem a uma posição que contém uma parede, o movimento é desfeito e sorteado novamente. O símbolo "*", por sua vez, representa um perigo, que retira uma vida do personagem cada vez que este passa por ele. Por fim, números representam itens. Ao passar por um número, o personagem ganha um item, e o número é reduzido em um, até no mínimo 0. Quando o número chega a zero, não é mais possível retirar itens de sua posição. A cada 4 itens que o personagem pega, ele ganha uma vida.
 </p>
