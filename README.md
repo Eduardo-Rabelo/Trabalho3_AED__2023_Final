@@ -64,7 +64,7 @@ Já na própria tela, são printadas a matriz a ser percorrida, a matriz percorr
 ![cout](https://github.com/Eduardo-Rabelo/Trabalho3_AED__2023_Final/blob/main/ImagensTrabalho3_AED/cout.png)
 
 <p align="justify">
-A única excessão é o método aleatório, que é mostrado como era no trabalho anterior, além da matriz percorrida, também são mostrados todos os caminhos percorridos até o final da matriz
+A única excessão é o método aleatório, que é mostrado como era no trabalho anterior, além da matriz percorrida, também são mostrados todos os caminhos percorridos até o final da matriz.
 </p>
 
 # Compilação e Execução
