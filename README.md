@@ -61,21 +61,14 @@ No arquivo "output.data",  são mostradas a matriz percorrida e a matriz verdade
 ![telaOutput](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/telaOutput.png)
 
 <p align="justify">
-Já na própria tela, são printadas a matriz a ser percorrida, a matriz percorrida, o número de casas percorridas ao menos uma vez na matriz,
+Já na própria tela, são printadas a matriz a ser percorrida, a matriz percorrida, o número de casas percorridas ao menos uma vez na matriz, o número de perigos enfrentados, a pontuação e o tempo de execução do método. A seguir, mostra-se o output do DFS.
 </p>
 
 ![telaOutputPrimeiraFase](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/telaOutputPrimeiraFase.png)
 
 <p align="justify">
-	O caminho printado mostra também as tentativas de se passar pela parede, porém não mostra o movimento de retorno para a posição anterior. Para se ler o caminho,é preciso ter em mente que, caso o personagem tente atravessar a parede, o movimento não ocorre e ele fica na posição em que estava anteriormente.
+A única excessão é o método aleatório, que é mostrado como era no trabalho anterior, além da matriz percorrida, também são mostrados todos os caminhos percorridos até o final da matriz
 </p>
-
-<p align="justify">
-Com relação ao arquivo "output.data", ele é constituido das matrizes já percorridas depois do jogo ter acabado e das matrizes verdade, que marcam os locais que foram visitados ao menos uma vez pelo personagem com o símbolo "1".
-</p>
-
-![telaOutputData](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/telaOutputData.png)
-
 
 # Compilação e Execução
 
