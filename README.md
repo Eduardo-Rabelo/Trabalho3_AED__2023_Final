@@ -13,7 +13,7 @@
 	Assim como no trabalho anterior, há perigos (*) pelo caminho, agora porém, esses parigos fazem o personagem voltar para o início da matriz, sendo que a única mudança, na própria matriz, é a troca do perigo por um item (1),para evitar que a matriz seja reiniciada infinitas vezes. Todo o caminho percorrido pelo personagem antes de chegar no perigo é apagado e o percorrimento recomeça. Isso torna o processo muito mais custoso, em termos de tempo de execução e a diferença de tempo entre os métodos de busca se torna evidente. No geral, o BFS é bom para encontrar a condição de finalização (?) caso ela esteja próxima ao início da matriz, e o DFS é melhor quando ela fica mais próxima ao final.
 </p>
 
-![ProfundoPe]([https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/direita.png)](https://github.com/Eduardo-Rabelo/Trabalho3_AED__2023_Final/blob/main/ImagensTrabalho3_AED/ProfundoPe.png)
+![ProfundoPe](https://github.com/Eduardo-Rabelo/Trabalho3_AED__2023_Final/blob/main/ImagensTrabalho3_AED/ProfundoPe.png)
 
 		
 <p align="justify">	
