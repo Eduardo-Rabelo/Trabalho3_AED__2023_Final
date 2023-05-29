@@ -48,7 +48,7 @@
 
 # Conclusão
 <p align="justify">
-	É importante dizer que, em questão de tempo de execução, o algoritmo é imprevisível, pois o método escolhido para percorrer a matriz foi a aleatoriedade, portanto, o personagem pode andar por todas as fases muitas vezes antes de uma das condições de parada ser satisfeita. Inclusive, é muito mais provável que o personagem morra, do que ele sobreviva a todas as fases até passar por todas elas e volte a posição de início de jogo sem ter adquirido itens na última vez que passou por todas as fases. Ou seja, tendo como objetivo a vitória no jogo, convém estudar outro método de percorrer a matriz, porém, como a execução do programa termina caso o personagem morra, sua execução, no geral, é rápida. Caso houver poucos, ou nenhum perigo, porém, o programa pode demorar muito para ser executado, a depender do tamanho e do número de matrizes.
+	Em suma, comparados ao método aleatório, os métodos BFS e DFS são muito mais previsíveis e, portanto, mais indicados, porém, há casos em que eles se tornão tão ruins, ou piores que o aleatório, de modo que, se houver alguma informação a respeito do local provável de se encontrar a condição de finalização, é possível escolher o método que provavelmente busca melhor na matriz.
 </p>	
 
 
