@@ -60,7 +60,7 @@ No arquivo "output.data",  são mostradas a matriz percorrida e a matriz verdade
 Já na própria tela, são printadas a matriz a ser percorrida, a matriz percorrida, o número de casas percorridas ao menos uma vez na matriz, o número de perigos enfrentados, a pontuação e o tempo de execução do método. A seguir, mostra-se o output do DFS.
 </p>
 
-![telaOutputPrimeiraFase](https://github.com/Eduardo-Rabelo/Trabalho2_AED1_2023/blob/main/Imagens/telaOutputPrimeiraFase.png)
+![cout](https://github.com/Eduardo-Rabelo/Trabalho3_AED__2023_Final/blob/main/ImagensTrabalho3_AED/cout.png)
 
 <p align="justify">
 A única excessão é o método aleatório, que é mostrado como era no trabalho anterior, além da matriz percorrida, também são mostrados todos os caminhos percorridos até o final da matriz
